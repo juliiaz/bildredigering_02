@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(106, 119, 109);
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3 {
+    background-color: hwb(134 77% 16%);
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.3rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Rubriker */
+h1,
+h2,
+h3 {
+    padding: 0.4rem 0.6rem;
+}
+
+/* Startsidan */
+/* Logotyp */
+
+.logo-link {
+    display: block;
+    width: fit-content;
+    padding: 15px 20px;
+}
+
+.site-logo {
+    width: 65px;
+    height: auto;
+    display: block;
+}
+
+/* Headerbild */
+
+.header-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.4;
+}
+
+/* Navigering */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+nav a {
+    background-color: hwb(134 77% 16%);
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: lab(31.07% -4.15 1.28);
+    color: hsl(128, 27%, 89%);
+}
+
+/* Intro text*/
+.intro {
+    margin: auto;
+    padding: 0 20px;
+    text-align: left;
+    color: hwb(120 2% 98%);
+}
+
+.intro h1 {
+    margin-bottom: 5px;
+}
+
+.intro p {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* Bilder startsidan */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-gallery h2 {
+    margin: 0 auto;
+}
+
+.gallery-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+/* Bildredigerings bilder */
+.image-comparison {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.image-comparison img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+}
+
+.image-editing h2,
+.image-editing h3 {
+    text-align: center;
+}
+
+.image-editing h2 {
+    font-size: 25px;
+}
+
+.image-editing h3 {
+    font-size: 23px;
+}
+
+
+.image-editing p {
+    margin: 20px auto;
+     padding: 1rem 1rem;
+    text-align: left;
+    font-size: 20px;
+}
+
+/* Om mig */
+
+.about-me {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-me p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.portrait {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 50px auto 0;
+}
+
+/* Större skärmar */
+@media (min-width: 768px) {
+
+/* Headerbild */
+    .header-image {
+        height: 350px;
+    }
+
+/* Navigering */
+    nav {
+        gap: 80px;
+    }
+
+    nav a {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* Bildgalleriet */
+.image-gallery {
+      flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.gallery-images {
+    flex-direction: row;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.image-gallery img {
+    flex: 1;
+    min-width: 0;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro p {
+    max-width: 1000px;
+    margin: 20px auto;
+    font-size: 22px;
+}
+
+/* Bildredigeringssidan */
+.image-comparison {
+    flex-direction: row;
+    gap: 20px;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+.image-comparison > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.image-comparison img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    display: block;
+}
+
+.image-editing p {
+    text-align: center;
+    max-width: 1000px;
+    font-size: 22px;
+}
+
+/* Om mig */
+.portrait {
+    width: 405px;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
